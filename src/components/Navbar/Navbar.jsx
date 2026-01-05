@@ -54,9 +54,12 @@ function Example() {
             </NavDropdown>
           </Nav>
 
-          <Nav className="ms-auto">
+          <Nav className="ms-auto nav-actions">
             <Button href="/suscripcion" className="subscribe-btn">
               Suscribirse
+            </Button>
+            <Button href="/contacto" className="contact-btn">
+              Contacto
             </Button>
           </Nav>
         </Navbar.Collapse>
