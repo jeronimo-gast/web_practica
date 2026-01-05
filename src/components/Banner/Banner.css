@@ -1,0 +1,29 @@
+.site-banner{
+  background:#f5c542;
+  color:#0b1220;
+  padding:12px 40px 12px 16px;
+  font-weight:600;
+  position:relative;
+  text-align:center;
+}
+
+.close-banner{
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  background:none;
+  border:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+@media(max-width:575px){
+  .site-banner{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:1050;
+  }
+}

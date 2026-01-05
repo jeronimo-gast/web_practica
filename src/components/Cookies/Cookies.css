@@ -1,0 +1,36 @@
+.cookies-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:2000;
+}
+
+.cookies-banner{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#0b1220;
+  color:#fff;
+  padding:20px 24px;
+  border-radius:12px;
+  z-index:2100;
+  max-width:420px;
+  width:90%;
+  text-align:center;
+}
+
+.cookies-banner p{
+  margin-bottom:12px;
+  font-size:.95rem;
+}
+
+.cookies-banner button{
+  background:#f5c542;
+  color:#0b1220;
+  border:none;
+  padding:8px 18px;
+  border-radius:20px;
+  font-weight:600;
+  cursor:pointer;
+}

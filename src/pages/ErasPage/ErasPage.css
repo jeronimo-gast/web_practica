@@ -1,0 +1,29 @@
+.eras-page{
+  color:#fff;
+  padding-top:40px;
+}
+
+.eras-page h1{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.era-block{
+  margin-bottom:80px;
+  align-items:center;
+}
+
+.era-media{
+  width:100%;
+  border-radius:12px;
+}
+
+.era-text h3{
+  margin-bottom:10px;
+}
+
+@media(max-width:991px){
+  .era-text{
+    margin-top:20px;
+  }
+}
