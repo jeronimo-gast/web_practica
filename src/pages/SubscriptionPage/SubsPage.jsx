@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { useState } from "react";
 import "./SubsPage.css";
 
@@ -54,29 +55,26 @@ function Suscripcion() {
       <p>Recibe novedades y curiosidades sobre la historia de los videojuegos.</p>
 
       <Form action="https://postman-echo.com/post" method="post" onSubmit={validarNewsletter}>
-        <Form.Group className="mb-3">
-          <Form.Label>Nombre y Apellidos</Form.Label>
+
+        <FloatingLabel label="Nombre y Apellidos" className="mb-3">
           <Form.Control name="nombre" />
           {errores.nombre && <div className="error">{errores.nombre}</div>}
-        </Form.Group>
+        </FloatingLabel>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Email</Form.Label>
+        <FloatingLabel label="Email" className="mb-3">
           <Form.Control name="email" />
           {errores.email && <div className="error">{errores.email}</div>}
-        </Form.Group>
+        </FloatingLabel>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Dirección</Form.Label>
+        <FloatingLabel label="Dirección" className="mb-3">
           <Form.Control name="direccion" />
           {errores.direccion && <div className="error">{errores.direccion}</div>}
-        </Form.Group>
+        </FloatingLabel>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Teléfono</Form.Label>
+        <FloatingLabel label="Teléfono" className="mb-3">
           <Form.Control name="telefono" />
           {errores.telefono && <div className="error">{errores.telefono}</div>}
-        </Form.Group>
+        </FloatingLabel>
 
         <Form.Group className="mb-3">
           <Form.Check
@@ -95,23 +93,21 @@ function Suscripcion() {
       <p>¿Tienes alguna duda o sugerencia? Escríbenos.</p>
 
       <Form action="https://postman-echo.com/post" method="post" onSubmit={validarContacto}>
-        <Form.Group className="mb-3">
-          <Form.Label>Nombre</Form.Label>
+
+        <FloatingLabel label="Nombre" className="mb-3">
           <Form.Control name="nombreContacto" />
           {errores.nombreContacto && <div className="error">{errores.nombreContacto}</div>}
-        </Form.Group>
+        </FloatingLabel>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Email</Form.Label>
+        <FloatingLabel label="Email" className="mb-3">
           <Form.Control name="emailContacto" />
           {errores.emailContacto && <div className="error">{errores.emailContacto}</div>}
-        </Form.Group>
+        </FloatingLabel>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Mensaje</Form.Label>
+        <FloatingLabel label="Mensaje" className="mb-3">
           <Form.Control as="textarea" rows={4} name="mensaje" />
           {errores.mensaje && <div className="error">{errores.mensaje}</div>}
-        </Form.Group>
+        </FloatingLabel>
 
         <Button type="submit" className="subscribe-btn">Enviar mensaje</Button>
       </Form>

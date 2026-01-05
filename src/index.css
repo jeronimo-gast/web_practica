@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 :root {
+  --vh: 100vh;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@supports (height: 100svh) {
+  :root {
+    --vh: 100svh;
+  }
 }
 
 a {
@@ -25,16 +29,16 @@ a:hover {
   color: #535bf2;
 }
 
-/* ⛔ FIX PRINCIPAL: body ya NO es flex */
+html,
 body {
+  width: 100%;
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
-  display: block; /* <-- Antes era flex; aquí estaba el problema */
+  min-height: 100%;
+  overflow-x: hidden;
   background-color: #242424;
 }
 
-/* Puedes dejar estos estilos */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -72,7 +76,29 @@ button:focus-visible {
   }
 }
 
-main{
-  min-height:3000px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  min-height: var(--vh);
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

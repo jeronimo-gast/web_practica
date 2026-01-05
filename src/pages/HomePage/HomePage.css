@@ -1,30 +1,20 @@
 .home-container {
-  width: 100%;
   min-height: 100vh;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  background-color: #0b1220;
-  background-blend-mode: multiply;
-
+  background: #0b1220 center / cover no-repeat;
+  color: #f1f1f1;
   text-align: center;
   padding: 2rem 1rem;
-  color: #f1f1f1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .home-container {
     background-attachment: fixed;
   }
 }
 
-
 .intro {
-  margin-top: 2rem;
   max-width: 800px;
-  margin-inline: auto;
+  margin: 2rem auto 0;
 }
 
 .intro h1 {
@@ -34,11 +24,10 @@
 }
 
 .intro p {
+  color: #d1d5db;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #d1d5db;
 }
-
 
 .highlights {
   margin-top: 3rem;
@@ -49,22 +38,19 @@
   margin-bottom: 1.5rem;
 }
 
-
 .feature-cards {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .feature-card {
-  background: rgba(12, 16, 28, 0.95); 
-  color: #f5f7fb;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: 300px;
+  background: rgba(12,16,28,.95);
   border-radius: 12px;
   overflow: hidden;
-  width: 300px;
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .2s, box-shadow .2s;
 }
 
 .feature-card img {
@@ -75,20 +61,18 @@
 
 .feature-card h3 {
   margin: .9rem 1rem .4rem;
-  color: #ffffff;
-  font-weight: 700;
+  color: #fff;
 }
 
 .feature-card p {
   margin: 0 1rem 1rem;
   color: #e6e9f0;
-  font-size: 0.98rem;
-  line-height: 1.55;
+  font-size: .98rem;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 22px rgba(78, 161, 255, 0.25);
+  box-shadow: 0 8px 22px rgba(78,161,255,.25);
 }
 
 @media (max-width: 360px) {
@@ -96,4 +80,3 @@
     width: 100%;
   }
 }
-
