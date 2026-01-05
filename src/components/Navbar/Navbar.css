@@ -1,0 +1,45 @@
+.custom-navbar{ 
+    background:#0b1220;
+}
+.nav-link{
+    transition: color .2s ease, transform .15s ease;
+}
+.nav-link:hover{
+    transform: translateY(-1px);
+}
+.logo-img{
+  height:50px;
+  width:auto;
+  object-fit:contain;
+  transition:transform .2s ease, opacity .2s ease;
+  margin-left:30px;
+}
+.logo-img:hover{
+  transform:scale(1.06);
+  opacity:.85;
+}
+.subscribe-btn{
+    background:transparent;
+    border:2px solid #f5c542;
+    color:#f5c542;
+    font-weight:600;
+    padding:6px 16px;
+    border-radius:20px;
+    transition:all .3s ease;
+}
+.subscribe-btn:hover{
+    background:#f5c542;
+    color:#0b1220;
+    transform:scale(1.05);
+}
+.nav-icon{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+  margin-right:6px;
+  vertical-align:-3px;
+  filter:invert(1) brightness(1.1);
+}
+.nav-link:hover .nav-icon{
+  filter:invert(1) brightness(1.3);
+}
