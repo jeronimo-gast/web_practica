@@ -1,5 +1,5 @@
 import "./../Consoles.css";
-import psImg from "./../../assets/consoles/playstation.jpg";
+import psImg from "./../../assets/consoles/playstation.png";
 
 import PS1 from "./../../assets/consoles/ps1.jpg";
 import PS2 from "./../../assets/consoles/ps2.jpg";

@@ -18,26 +18,33 @@ import img16 from "./../../assets/gallery/gta.jpg";
 
 function GamesPage() {
   return (
-    <div className="games-gallery">
-      <img src={img1} className="gallery-item tall" />
-      <img src={img2} className="gallery-item" />
-      <img src={img3} className="gallery-item wide" />
-      <img src={img4} className="gallery-item" />
+    <div className="main-content games-page">
+      <h1 className="games-title">Videojuegos Icónicos</h1>
+      <p className="games-subtitle">
+        Una selección visual de títulos que marcaron la historia del videojuego
+      </p>
 
-      <img src={img5} className="gallery-item tall" />
-      <img src={img6} className="gallery-item" />
-      <img src={img7} className="gallery-item wide" />
-      <img src={img8} className="gallery-item" />
+      <div className="games-gallery">
+        <img src={img1} className="gallery-item tall" />
+        <img src={img2} className="gallery-item" />
+        <img src={img3} className="gallery-item wide" />
+        <img src={img4} className="gallery-item" />
 
-      <img src={img9} className="gallery-item" />
-      <img src={img10} className="gallery-item tall" />
-      <img src={img11} className="gallery-item" />
-      <img src={img12} className="gallery-item wide" />
+        <img src={img5} className="gallery-item tall" />
+        <img src={img6} className="gallery-item" />
+        <img src={img7} className="gallery-item wide" />
+        <img src={img8} className="gallery-item" />
 
-      <img src={img13} className="gallery-item" />
-      <img src={img14} className="gallery-item tall" />
-      <img src={img15} className="gallery-item" />
-      <img src={img16} className="gallery-item wide" />
+        <img src={img9} className="gallery-item" />
+        <img src={img10} className="gallery-item tall" />
+        <img src={img11} className="gallery-item" />
+        <img src={img12} className="gallery-item wide" />
+
+        <img src={img13} className="gallery-item" />
+        <img src={img14} className="gallery-item tall" />
+        <img src={img15} className="gallery-item" />
+        <img src={img16} className="gallery-item wide" />
+      </div>
     </div>
   );
 }
