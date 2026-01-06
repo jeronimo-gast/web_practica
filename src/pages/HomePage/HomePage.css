@@ -1,15 +1,15 @@
+.main-hero {
+  height: 3000px;
+  display: flex;
+  flex-direction: column;
+}
+
 .home-container {
-  min-height: 100vh;
-  background: #0b1220 center / cover no-repeat;
+  flex: 1;
+  background: #0b1220;
   color: #f1f1f1;
   text-align: center;
   padding: 2rem 1rem;
-}
-
-@media (min-width: 1025px) {
-  .home-container {
-    background-attachment: fixed;
-  }
 }
 
 .intro {

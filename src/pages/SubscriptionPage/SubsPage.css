@@ -1,11 +1,12 @@
 .suscripcion-page{
   max-width:600px;
-  margin:60px auto;
   color:#fff;
+  padding-top: 30px
 }
 
 .suscripcion-page h1{
   margin-bottom:10px;
+  padding-top: 30px;
 }
 
 .suscripcion-page p{

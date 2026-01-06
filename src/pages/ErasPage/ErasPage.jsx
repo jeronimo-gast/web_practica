@@ -8,7 +8,7 @@ import eraImg2 from './../../assets/eras/hd.jpg';
 
 function ErasPage(){
   return(
-    <Container className="eras-page">
+    <Container className="main-content eras-page">
       <h1>Las Eras de los Videojuegos</h1>
 
       <Row className="era-block">

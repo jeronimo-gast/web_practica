@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 :root {
-  --vh: 100vh;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -12,12 +11,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@supports (height: 100svh) {
-  :root {
-    --vh: 100svh;
-  }
 }
 
 a {
@@ -83,16 +76,21 @@ button:focus-visible {
 }
 
 img,
-video,
-iframe {
+video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
+
 main {
-  min-height: var(--vh);
-  padding-top: 50px;
+  min-height: 3000px;
+  background-color: #0b1220;
 }
 
 .main-content {
@@ -100,4 +98,11 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 16px;
+  min-height: 3000px;
+}
+
+.main-hero {
+  min-height: 3000px;
+  display: flex;
+  flex-direction: column;
 }

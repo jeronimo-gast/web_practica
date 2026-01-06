@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { useState } from "react";
 import "./ContactPage.css";
+import Jero from "./../../assets/jero.jpeg";
 
 function ContactPage() {
   const [errores, setErrores] = useState({});
@@ -30,18 +31,19 @@ function ContactPage() {
       <h1>Contacto</h1>
 
       <section className="author-box">
-        <img src="/src/assets/author.jpg" className="author-photo" />
+        <img src={Jero} className="author-photo" />
         <div>
           <p>
-            <strong>Nombre:</strong> Tu Nombre
+            <strong>Nombre:</strong> Jeronimo Gast
           </p>
           <p>
-            <strong>Email:</strong> tuemail@email.com
+            <strong>Email:</strong> jeronimoolea04@gmail.com
           </p>
           <p>
             Esta web ha sido creada como práctica para mostrar la evolución
             histórica de los videojuegos, combinando diseño, multimedia y
-            desarrollo web moderno.
+            desarrollo web moderno. Contiene tanto informacion acerca de los
+            videojuegos como de las consolas que ayudaron a forjar a estos.
           </p>
         </div>
       </section>
@@ -81,13 +83,6 @@ function ContactPage() {
           loading="lazy"
         ></iframe>
       </div>
-
-      <div
-        className="fb-comments"
-        data-href="https://tu-web-de-practica.com"
-        data-width="100%"
-        data-numposts="5"
-      ></div>
     </Container>
   );
 }

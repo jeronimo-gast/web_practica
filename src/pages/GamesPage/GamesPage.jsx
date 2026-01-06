@@ -1,3 +1,5 @@
+import { InstagramEmbed } from "react-social-media-embed";
+
 import "./GamesPage.css";
 import img1 from "./../../assets/gallery/zelda.jpg";
 import img2 from "./../../assets/gallery/clair.jpg";
@@ -29,21 +31,33 @@ function GamesPage() {
         <img src={img2} className="gallery-item" />
         <img src={img3} className="gallery-item wide" />
         <img src={img4} className="gallery-item" />
-
         <img src={img5} className="gallery-item tall" />
         <img src={img6} className="gallery-item" />
         <img src={img7} className="gallery-item wide" />
         <img src={img8} className="gallery-item" />
-
         <img src={img9} className="gallery-item" />
         <img src={img10} className="gallery-item tall" />
         <img src={img11} className="gallery-item" />
         <img src={img12} className="gallery-item wide" />
-
         <img src={img13} className="gallery-item" />
         <img src={img14} className="gallery-item tall" />
         <img src={img15} className="gallery-item" />
         <img src={img16} className="gallery-item wide" />
+      </div>
+
+      <div className="social-section">
+        <h2>Nominados al Game of the Year</h2>
+        <p className="social-text">
+          Descubre los títulos nominados al premio más importante de The Game
+          Awards y sigue la actualidad oficial del evento.
+        </p>
+
+        <div className="instagram-wrapper">
+          <InstagramEmbed
+            url="https://www.instagram.com/p/DRKmTQciT-b/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            width={328}
+          />
+        </div>
       </div>
     </div>
   );

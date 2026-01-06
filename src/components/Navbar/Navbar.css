@@ -1,5 +1,6 @@
 .custom-navbar{
-  background:#0b1220;
+  background:#050a14;
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .logo-img{
@@ -17,11 +18,13 @@
   display:flex;
   align-items:center;
   gap:6px;
-  transition:transform .15s ease;
+  transition:transform .15s ease, opacity .15s ease;
+  opacity:.95;
 }
 
 .nav-link:hover{
   transform:translateY(-1px);
+  opacity:1;
 }
 
 .nav-icon{
@@ -46,7 +49,7 @@
 
 .subscribe-btn:hover{
   background:#f5c542;
-  color:#0b1220;
+  color:#050a14;
 }
 
 .contact-btn{
@@ -61,5 +64,5 @@
 
 .contact-btn:hover{
   background:#4ea1ff;
-  color:#0b1220;
+  color:#050a14;
 }
