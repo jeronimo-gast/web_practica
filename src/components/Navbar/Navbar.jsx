@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
+
 import logoImg from "./../../assets/logo.png";
 import erasIcon from "./../../assets/icons/eras.png";
 import gamesIcon from "./../../assets/icons/games.png";
@@ -10,13 +12,14 @@ import consoleIcon from "./../../assets/icons/console.png";
 import psIcon from "./../../assets/icons/ps.png";
 import xboxIcon from "./../../assets/icons/xbox.png";
 import nintendoIcon from "./../../assets/icons/nintendo.png";
+
 import "./Navbar.css";
 
 function Example() {
   return (
     <Navbar expand="md" className="custom-navbar" data-bs-theme="dark">
       <Container fluid>
-        <Navbar.Brand href="/" className="navbar-logo">
+        <Navbar.Brand as={Link} to="/" className="navbar-logo">
           <img src={logoImg} alt="VideoGames Logo" className="logo-img" />
         </Navbar.Brand>
 
@@ -24,11 +27,11 @@ function Example() {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/eras" className="nav-link">
+            <Nav.Link as={Link} to="/eras" className="nav-link">
               <img src={erasIcon} className="nav-icon" /> Eras
             </Nav.Link>
 
-            <Nav.Link href="/juegos" className="nav-link">
+            <Nav.Link as={Link} to="/juegos" className="nav-link">
               <img src={gamesIcon} className="nav-icon" /> Juegos
             </Nav.Link>
 
@@ -40,25 +43,26 @@ function Example() {
               }
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="/playstation">
+              <NavDropdown.Item as={Link} to="/playstation">
                 <img src={psIcon} className="nav-icon" /> PlayStation
               </NavDropdown.Item>
 
-              <NavDropdown.Item href="/xbox">
+              <NavDropdown.Item as={Link} to="/xbox">
                 <img src={xboxIcon} className="nav-icon" /> Xbox
               </NavDropdown.Item>
 
-              <NavDropdown.Item href="/nintendo">
+              <NavDropdown.Item as={Link} to="/nintendo">
                 <img src={nintendoIcon} className="nav-icon" /> Nintendo
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
 
           <Nav className="ms-auto nav-actions">
-            <Button href="/suscripcion" className="subscribe-btn">
+            <Button as={Link} to="/suscripcion" className="subscribe-btn">
               Suscribirse
             </Button>
-            <Button href="/contacto" className="contact-btn">
+
+            <Button as={Link} to="/contacto" className="contact-btn">
               Contacto
             </Button>
           </Nav>
