@@ -66,3 +66,12 @@
   background:#4ea1ff;
   color:#050a14;
 }
+
+@media (max-width: 768px) {
+  .navbar.custom-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1200;
+  }
+}
+
